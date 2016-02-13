@@ -129,3 +129,115 @@ footer{
 .navbar-default .navbar-link:hover {
   color: #ffcc00;
 }
+
+
+h2#contact{
+	padding-left: 70%;
+	padding-top: 5%;
+	color: #FFCC00;
+	font-size: 5vw;
+	text-shadow: 0px 1.5px 1.5px #800000;
+}
+
+h1#name{
+	text-align: center;
+	color: #FFCC00;
+	text-shadow: 0px 1.5px 1.5px #800000;
+}
+h2#touch{
+	text-align: center;
+	text-shadow: 0px 1.5px 1.5px #800000;
+}
+
+h2#project{
+	text-shadow: 0px 1.5px 1.5px #800000;
+	font-size: 4vw;
+	color: #FFCC00;
+}
+h1#work{
+	text-shadow: 0px 1.5px 1.5px #800000;
+	color: #FFCC00;
+	text-decoration: underline;
+	margin-right: 10px;
+}
+article.profile{
+	margin-top: -50px;
+	background-image: url(../images/Hanvinder.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 700px;	
+}
+
+body.rai{
+	background: url(../images/honey.png)no-repeat center center fixed;
+	background-size: cover;
+	
+	/*background-position: fixed;*/
+	height: 300px;
+}
+
+body.project{
+	background: url(../images/hanvinder1.jpg)no-repeat center center fixed;
+	background-size: cover;
+	
+	/*background-position: fixed;*/
+	height: 300px;
+}
+
+main.container{
+	border:  1px solid #FFCC00;
+	background-color: rgba( 211,211,211,0.8);
+	float: right;
+	width: 40%;
+	height: 550px;
+	margin: 40px 50px;
+}
+main.container p{
+	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif sans-serif;
+	font-size: 1.1em;
+	line-height: 1.5;
+	font-weight: normal;
+}
+
+main.container1{
+	border: 1px solid #000;
+	/*height: 600px;*/
+	background: lightgray;
+	padding: 0 300px;
+	margin-top: 200px;
+}
+
+main.container3{
+	border: 1px solid #000;
+	/*height: 600px;*/
+	background: lightgray;
+	padding: 0 300px;
+	margin-top: 200px;
+	height: 600px;
+}
+
+
+section.contact{
+			/* STEP 2: Set the flex container for the columns */
+			display: flex;
+			flex-direction: row;
+			flex-grow: 1;
+			padding-bottom: 100px;
+			padding-top: 25px;
+}
+
+div#mobile{
+	order: 1;
+	flex-basis: 50vw;
+	text-align: center;
+}
+div#email{
+	flex-basis: 0;
+	order: 2;
+	text-align: center;
+}
+div#skype{
+	flex-basis: 50vw;
+	order: 3;
+	text-align: center;
+}

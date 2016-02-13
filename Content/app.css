@@ -1,0 +1,131 @@
+/*app.css> Hanvinder Singh Rai> Portfolio> Css style for all the three pages of website*/
+
+/*custum stylesheet*/
+a.navbar-brand{
+	padding: 0 0 0 5%;
+	margin: 0;
+}
+footer{
+	text-align: center;
+	background-color: #68a78d;
+  border-color: #58967c;
+  background-image: -webkit-gradient(linear, left 0%, left 100%, from(#88baa5), to(#68a78d));
+  background-image: -webkit-linear-gradient(top, #88baa5, 0%, #68a78d, 100%);
+  background-image: -moz-linear-gradient(top, #88baa5 0%, #68a78d 100%);
+  background-image: linear-gradient(to bottom, #88baa5 0%, #68a78d 100%);
+  background-repeat: repeat-x;
+}
+.navbar-default {
+  background-color: #58967c;
+  border-color: #4c816b;
+  background-image: -webkit-gradient(linear, left 0%, left 100%, from(#74ad95), to(#58967c));
+  background-image: -webkit-linear-gradient(top, #74ad95, 0%, #58967c, 100%);
+  background-image: -moz-linear-gradient(top, #74ad95 0%, #58967c 100%);
+  background-image: linear-gradient(to bottom, #74ad95 0%, #58967c 100%);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff74ad95', endColorstr='#ff58967c', GradientType=0);
+}
+.navbar-default .navbar-brand {
+  color: #000000;
+}
+.navbar-default .navbar-brand:hover,
+.navbar-default .navbar-brand:focus {
+  color: #000000;
+  background-color: transparent;
+}
+.navbar-default .navbar-text {
+  color: #000000;
+}
+.navbar-default .navbar-nav > li:last-child > a {
+  border-right: 1px solid #4c816b;
+}
+.navbar-default .navbar-nav > li > a {
+  color: #000000;
+  border-left: 1px solid #4c816b;
+}
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus {
+  color: #ffcc00;
+  background-color: transparent;
+}
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a:focus {
+  color: #ffcc00;
+  background-color: #4c816b;
+  background-image: -webkit-gradient(linear, left 0%, left 100%, from(#4c816b), to(#5fa185));
+  background-image: -webkit-linear-gradient(top, #4c816b, 0%, #5fa185, 100%);
+  background-image: -moz-linear-gradient(top, #4c816b 0%, #5fa185 100%);
+  background-image: linear-gradient(to bottom, #4c816b 0%, #5fa185 100%);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff4c816b', endColorstr='#ff5fa185', GradientType=0);
+}
+.navbar-default .navbar-nav > .disabled > a,
+.navbar-default .navbar-nav > .disabled > a:hover,
+.navbar-default .navbar-nav > .disabled > a:focus {
+  color: #cccccc;
+  background-color: transparent;
+}
+.navbar-default .navbar-toggle {
+  border-color: #dddddd;
+}
+.navbar-default .navbar-toggle:hover,
+.navbar-default .navbar-toggle:focus {
+  background-color: #dddddd;
+}
+.navbar-default .navbar-toggle .icon-bar {
+  background-color: #cccccc;
+}
+.navbar-default .navbar-collapse,
+.navbar-default .navbar-form {
+  border-color: #4b8069;
+}
+.navbar-default .navbar-nav > .dropdown > a:hover .caret,
+.navbar-default .navbar-nav > .dropdown > a:focus .caret {
+  border-top-color: #ffcc00;
+  border-bottom-color: #ffcc00;
+}
+.navbar-default .navbar-nav > .open > a,
+.navbar-default .navbar-nav > .open > a:hover,
+.navbar-default .navbar-nav > .open > a:focus {
+  background-color: #4c816b;
+  color: #ffcc00;
+}
+.navbar-default .navbar-nav > .open > a .caret,
+.navbar-default .navbar-nav > .open > a:hover .caret,
+.navbar-default .navbar-nav > .open > a:focus .caret {
+  border-top-color: #ffcc00;
+  border-bottom-color: #ffcc00;
+}
+.navbar-default .navbar-nav > .dropdown > a .caret {
+  border-top-color: #000000;
+  border-bottom-color: #000000;
+}
+@media (max-width: 767) {
+  .navbar-default .navbar-nav .open .dropdown-menu > li > a {
+    color: #000000;
+  }
+  .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover,
+  .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
+    color: #ffcc00;
+    background-color: transparent;
+  }
+  .navbar-default .navbar-nav .open .dropdown-menu > .active > a,
+  .navbar-default .navbar-nav .open .dropdown-menu > .active > a:hover,
+  .navbar-default .navbar-nav .open .dropdown-menu > .active > a:focus {
+    color: #ffcc00;
+    background-color: #4c816b;
+  }
+  .navbar-default .navbar-nav .open .dropdown-menu > .disabled > a,
+  .navbar-default .navbar-nav .open .dropdown-menu > .disabled > a:hover,
+  .navbar-default .navbar-nav .open .dropdown-menu > .disabled > a:focus {
+    color: #cccccc;
+    background-color: transparent;
+  }
+}
+.navbar-default .navbar-link {
+  color: #000000;
+}
+.navbar-default .navbar-link:hover {
+  color: #ffcc00;
+}

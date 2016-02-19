@@ -2,14 +2,16 @@
 
     if (document.getElementById("about") != null) {
         console.log("About Page");
-    } else if (document.getElementById("projects") != null) {
+    } else if (document.getElementById("project") != null) {
         console.log("Projects Page");
     } else if (document.getElementById("contact") != null) {
         console.log("Contact Page");
         //declare variables and create a reference to form elements
+		var Name = document.getElementById("Name");
+		var surname = document.getElementById("surname");
         var email = document.getElementById("email");
-        var password = document.getElementById("password");
-        var checkMeOut= document.getElementById("checkMeOut");
+        var telephone = document.getElementById("telephone");
+        var textarea= document.getElementById("textarea");
         var submitButton = document.getElementById("submitButton");
         submitButton.pre
 

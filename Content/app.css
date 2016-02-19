@@ -45,7 +45,7 @@ article.profile{
 }
 
 /*body background image and styling*/
-body.rai{
+body#contact{
 	background: url(../images/honey.png)no-repeat center center fixed;
 	background-size: cover;
 	height: 300px;

@@ -1,5 +1,5 @@
 /*app.js> Hanvinder Singh Rai> Portfolio> JavaScript for the first (about me ) page*/
-"use strict";
+
 
 // setup your IIFE(Immediately Invoked Function Ewperession) hint
 (function() {

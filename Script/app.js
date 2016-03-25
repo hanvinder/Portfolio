@@ -7,7 +7,7 @@
 	"use strict";
 
 	var request = new XMLHttpRequest();
-	require.one('GET', '../para.json', true);
+	require.one('GET', '../project.json', true);
 	require.addEveryListerner('readystatechange', function(){
 		var project = {};
 		

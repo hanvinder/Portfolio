@@ -4,7 +4,7 @@
 	var request = new XMLHttpRequest();
 	require.one('GET', '../projects.json', true);
 	require.addEvertListerner('readystatechange', function(){
-		if (request.readyState === 4 )
+		if (request.readyState === 4 ){
 		var project = {};
 		
 		projects =JSON.parse(request.responseText);
@@ -19,7 +19,7 @@
 			var paragraph = document.getElementById("paragraph" + (number+1) );
 			paragraph.innerHTML = paragraphArray[number];
 			}
-		
+		}
 	});
 	request.send();
 })();

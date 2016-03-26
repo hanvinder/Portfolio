@@ -1,5 +1,5 @@
 /*app.js> Hanvinder Singh Rai> Portfolio> JavaScript for the first (about me ) page*/
-
+ 
 
 // setup your IIFE(Immediately Invoked Function Ewperession) hint
 (function() {
@@ -9,6 +9,7 @@
 	var request = new XMLHttpRequest();
 	require.one('GET', '../project.json', true);
 	require.addEveryListerner('readystatechange', function(){
+		if (request.readyState === 4 )
 		var project = {};
 		
 		project =JSON.parse(request.responseText);
@@ -22,8 +23,11 @@
 		for(var number=0; number < paragraphArrayLength; number++){
 			var paragraph = document.getElementById("paragraph" + (number+1) );
 			paragraph.innerHTML = paragraphArray[number];
+			}
 		}
-	})
+	});
+	request.send();
+})();
 /*
 (function () {
 	var firstParagraph;

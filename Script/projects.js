@@ -7,7 +7,7 @@
     request.open('GET', '../projects.json', true);
     request.addEventListener('readystatechange', function() {
         // wait for file to finish loading
-        if (request.readyState === 4 && request.status === 200) {
+        if (request.readyState === 4 ) {
             var projects = {};
 
             // read in the json object
@@ -32,10 +32,6 @@
             }
 
         }
-    });
-    request.send();
-
-})();        }
     });
     request.send();
 

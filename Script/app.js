@@ -8,11 +8,11 @@
 
 	var request = new XMLHttpRequest();
 	require.one('GET', '../project.json', true);
-	require.addEveryListerner('readystatechange', function(){
+	require.addEvertListerner('readystatechange', function(){
 		if (request.readyState === 4 )
 		var project = {};
 		
-		project =JSON.parse(request.responseText);
+		projects =JSON.parse(request.responseText);
 		
 		var paragraphArray =[];
 		

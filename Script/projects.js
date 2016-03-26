@@ -28,7 +28,7 @@
                 var paragraph = document.getElementById("paragraph" + (number + 1));
 
                 // set the innerHTML of the paragraph to the string from the paragraphArray
-                paragraph.innerHTML = paragraphArray[number];
+                paragraph.innerText = paragraphArray[number];
             }
 
         }

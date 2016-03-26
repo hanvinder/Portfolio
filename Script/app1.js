@@ -1,54 +1,34 @@
-/*app1.js> Hanvinder Singh Rai> Portfolio> JavaScript for the second (project) page*/
-"use strict";
-(function () {
-	var work;
-
-	work = document.getElementById("work");
-
-	work.innerHTML = " work ";
 
 
+// setup your IIFE (Immediately Invoked Function Expression)
+(function() {
 
-})();
-(function () {
-	var project;
+    "use strict";
+    //  xhr object
+    var request = new XMLHttpRequest();
+    request.open('GET', '../work.json', true);
+    request.addEventListener('readystatechange', function() {
+        //  LOADING PROCESS
+        if (request.readyState === 4 ) {
+            var work = {};
 
-	project = document.getElementById("project");
+            // READING JSON FILE
+            work = JSON.parse(request.responseText);
 
-	project.innerHTML = " Projects ";
+            var paragraphArray = [];
+            paragraphArray = work.paragraphs;
 
+            // LENGHT FOR PARAGRAPHARRAY  
+            var paragraphArrayLength = paragraphArray.length;
 
+            // LOOPING PARAGRAPHARRAY
+            for (var number = 0; number < paragraphArrayLength; number++) {
+                var paragraph = document.getElementById("paragraph" + (number + 1));
+                paragraph.innerText = paragraphArray[number];
+            }
 
-})();
-(function () {
-	var firstProject;
-
-	firstProject = document.getElementById("firstProject");
-
-	firstProject.innerHTML = " Font Designed Website <br> A website featuring a short post about a particular font that was designed to be used on the screen. ";
-
-
-
-})();
-
-(function () {
-	var secondProject;
-
-	secondProject = document.getElementById("secondProject");
-
-	secondProject.innerHTML = " Telescope Website <br> A webite with experimental navigation, header, footer, form page and other codes ";
-
-
-
-})();
-
-(function () {
-	var thirdProject;
-
-	thirdProject = document.getElementById("thirdProject");
-
-	thirdProject.innerHTML = "Camera Website <br> A webite with basic use navigation, header, footer, form page and other codes and template with design principles";
-
-
+        }
+    });
+    request.send();
 
 })();

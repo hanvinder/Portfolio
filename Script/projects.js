@@ -1,3 +1,4 @@
+/*projects.js> Hanvinder Singh Rai> Portfolio> JavaScript for the contact page*/
 // setup your IIFE (Immediately Invoked Function Expression)
 (function() {
 

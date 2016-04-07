@@ -1,21 +1,21 @@
-
+/*projects.js> Hanvinder Singh Rai> Portfolio> JavaScript for the contact page*/
 // setup your IIFE (Immediately Invoked Function Expression)
 (function() {
 
     "use strict";
     //  xhr object
     var request = new XMLHttpRequest();
-    request.open('GET', '../work.json', true);
+    request.open('GET', '../projects.json', true);
     request.addEventListener('readystatechange', function() {
         //  LOADING PROCESS
         if (request.readyState === 4 ) {
-            var work = {};
+            var projects = {};
 
             // READING JSON FILE
-            work = JSON.parse(request.responseText);
+            projects = JSON.parse(request.responseText);
 
             var paragraphArray = [];
-            paragraphArray = work.paragraphs;
+            paragraphArray = projects.paragraphs;
 
             // LENGHT FOR PARAGRAPHARRAY  
             var paragraphArrayLength = paragraphArray.length;

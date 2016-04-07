@@ -368,3 +368,41 @@ p.social:hover{
 .fa-instagram:hover{color: #FFCC00;}
 .fa-twitter:hover{color: #FFCC00;}
 .fa-google:hover{color: #FFCC00;}
+
+/* FAB styling 
+#container {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.14), 0 4px 8px rgba(0, 0, 0, 0.28);
+}
+#container:hover:after {
+  content: attr(title);
+  position: absolute;
+  right: 110%;
+  top: 16px;
+  white-space: nowrap;
+  background: #585858;
+  padding: 3px 7px;
+  color: white;
+  border-radius: 2px;
+  font: 300 15px Roboto;
+}
+
+#fab {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background: #3E35B2 url("http://cbwconline.com/IMG/Codepen/Profile.svg") no-repeat center center;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+}
+#fab:hover {
+  background: #3E35B2 url("http://cbwconline.com/IMG/Codepen/Go.svg") no-repeat center center;
+  -webkit-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  transform: rotate(90deg);
+}
